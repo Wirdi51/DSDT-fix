@@ -281,12 +281,12 @@ DefinitionBlock ("", "DSDT", 1, "GBT   ", "GBTUACPI", 0x00001000)
     {
         Method (_MSG, 1, NotSerialized)  // _MSG: Message
         {
-            Local0 = Local0
+	    // Placeholder method - argument ignored
         }
 
         Method (_SST, 1, NotSerialized)  // _SST: System Status
         {
-            Local0 = Local0
+	    // Placeholder method - argument ignored
         }
     }
 
