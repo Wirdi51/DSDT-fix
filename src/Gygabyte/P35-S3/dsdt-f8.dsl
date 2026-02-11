@@ -275,6 +275,13 @@ DefinitionBlock ("", "DSDT", 1, "GBT   ", "GBTUACPI", 0x00001000)
         Notify (\_SB.PCI0.USB3, 0x00) // Bus Check
         Notify (\_SB.PCI0.USB4, 0x00) // Bus Check
         Notify (\_SB.PCI0.USB5, 0x00) // Bus Check
+
+	// Return package required by ACPI spec for _WAK
+	Return (Package (0x02)
+	{
+		Zero,	// Status
+		Zero	// Power level
+	})
     }
 
     Scope (\_SI)
